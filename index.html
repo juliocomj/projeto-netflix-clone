@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="img/icone.jpg" type="image/x-icon">
+    
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+    <title>ChavesFlix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">CHAVESFLIX</h2>
+            <nav>
+                <a href="https://web.dio.me/home" target="blank">Início</a>
+                <a href="#menu">Séries</a>                
+                <a href="#menu">Filmes</a>
+                <a href="#menu">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">TURMA DO CHAVES</h3>
+                <p class="descricao">Criado por Roberto Gómes Bolaños, Chaves fez sucesso no Brasil 
+                    como uma comédia leve e divertida sobre moradores de um vila cheia de confusões. 
+                    Chaves, Chiquinha, Quico, Seu Madruga, Dona Florina, Bruxa do 71 e muitos outros 
+                    fazem parte desse seriado divertido. Assista agora os episódios.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <a href="https://www.youtube.com/watch?v=_sS1dj8Z7rc" target="blank">ASSISTIR AGORA</a>                        
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a href="https://pt.wikipedia.org/wiki/30_Anos_de_Chaves" target="blank">MAIS INFORMAÇÕES</a>
+                    </button>
+
+                    <button role="button" class="botaotopo" onclick="backTop();">
+                        <img src="img/topo.png" alt="">
+                    </button>                    
+                </div>
+            </div>          
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <section id="menu"></section>
+        <div class="owl-carousel owl-theme">                
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini1.jpg"></a>
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini2.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini3.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini4.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini5.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini6.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini7.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini8.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini9.jpg"></a>
+                </div> 
+                <div class="item"> 
+                    <img class="box-filme" alt="" srcset="">
+                    <a href="https://www.netflix.com/br/" target="blank"><img src="img/mini10.jpg"></a>
+                </div>                                  
+        </div>      
+    </div>
+
+    <script src="https://kit.fontawesome.com/8384353b4e.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.botaotopo')
+            scroll.classList.toggle('active', window.scrollY > 450)
+        })
+
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+</body>
+</html>
